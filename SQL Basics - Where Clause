@@ -1,0 +1,20 @@
+SELECT * from sqlseries.dbo.EmployeeDemographics 
+WHERE LastName  = 'Scott'
+
+It will retun one row as there is only one record where Scott is lastname.
+
+SELECT * from sqlseries.dbo.EmployeeDemographics 
+WHERE LastName  = 'Scott' AND age>30
+
+It will return one row where lastname is scott and age is greater than 30.It will check rows where both the condtions are true.
+
+SELECT * from sqlseries.dbo.EmployeeDemographics 
+WHERE LastName  = 'Martin' OR age>31
+
+As this is OR contion so it will check for rows where lastname is Martin or age for employee is greater than 31.This return row if either of condition is true for record.
+Above query will return records for 5 employess
+Angela Martin - Because of Lastname condtion even though age is not greater than 31.
+Toby Flenderson - Because age is greater than 31
+Michael Scott - Because age is greater than 31
+Meridith Palmer - Because age is greater than 31
+Stanley Hudson - Because age is greater than 31
