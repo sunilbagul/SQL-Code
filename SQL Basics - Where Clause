@@ -18,3 +18,10 @@ Toby Flenderson - Because age is greater than 31
 Michael Scott - Because age is greater than 31
 Meridith Palmer - Because age is greater than 31
 Stanley Hudson - Because age is greater than 31
+
+SELECT * from sqlseries.dbo.EmployeeDemographics 
+WHERE LastName  <> 'Scott'
+
+It will return all the rows where Lastname is not Scott
+
+
